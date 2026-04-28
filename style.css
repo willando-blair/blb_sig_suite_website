@@ -59,6 +59,7 @@ a {
 .logo-header img {
     padding: 10px;
     height: 80%;
+    cursor: pointer;
 }
 
 .content {
