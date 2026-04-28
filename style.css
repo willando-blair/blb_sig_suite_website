@@ -263,3 +263,65 @@ i {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    h1 { font-size: 32px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 16px; }
+    p { font-size: 16px; }
+
+    .slogan-txt {
+        font-size: 24px;
+    }
+
+    .about-div {
+        flex-direction: column;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .sig-experiences {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .reserve-div {
+        width: 90%;
+    }
+
+    .reserve-div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .logo-header {
+        height: 80px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
