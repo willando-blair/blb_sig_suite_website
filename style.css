@@ -9,17 +9,41 @@ body {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    color: #2c3e50;
+    font-family: 'Palatino', 'URW Palladio L', serif;
+    color: #fff;
+    font-size: 48px;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
-    color: #2c3e50;
+    color: #472725;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: #b49f6b;
+    font-size: 18px;
 }
 
 p {
     font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border: #000 solid 1px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+.tagline-txt {
+    font-family: 'Lora', serif;
+    color: #fff;
 }
 
 .logo-header {
@@ -38,33 +62,74 @@ p {
 }
 
 .content {
+    text-align: center;
     padding: 20px;
     max-width: 95%;
     margin: 0 auto;
-    background-color: #fff;
-    opacity: 0.8;
+    background-color: #472725;
+    opacity: 0.9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 20px;
 }
 
+.tagline-txt {
+    font-size: 18px;
+}
+
+.slogan-txt {
+    font-family: 'Selima', serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.experiences-div hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
 .about-content {
-    padding: 20px;
-    max-width: 95%;
+    padding: 50px;
+    max-width: 60%;
     margin: 0 auto;
     background-color: #fff;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: 20px;  
     border-radius: 8px; 
+    text-align: center;
+    line-height: 1.6;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #b49f6b;
+    margin: 20px auto;
+    width: 50%;
 }
 
 .sig-ex-txt {
     background-color: #b49f6b;
-    opacity: 0.8;
-    font-family: 'Playfair Display', serif;
     color: #fff;
     text-align: center;
-    margin-top: 20px;
+}
+
+.experiences-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b49f6b;
     padding: 20px;
 }
 
@@ -74,36 +139,74 @@ p {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    margin-top: 20px;
+    background-color: #b49f6b;
+    padding: 20px;
 }
 
 .experience {
     background-color: #fff;
-    opacity: 0.8;
+    opacity: 1;
     padding: 20px;
     border-radius: 8px;
-    width: 300px;
+    width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    text-align: center;
+}
+
+.experience:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.exp-divider {
+    border: 0;
+    height: 1px;
+    background-color: #b49f6b;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.experience img {
+    width: 80%;
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid #b49f6b;
+}
+
+.sig-experiences h3 {
+    margin-top: 10px;
+    color: #472725;
+    font-family: 'Georgia', serif;
 }
 
 .reserve-div {
-    background-color: #b49f6b;
+    background-color: #fff;
     font-family: 'Playfair Display', serif;
     color: #fff;
     text-align: center;
-    margin-top: 20px;
     padding: 20px;
+    opacity: 0.9;
+    border-radius: 8px;
+    margin: 20px;
+    width: 40%;
+    justify-self: center;
+}
+
+.reserve-div img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
 }
 
 .socials-div {
-    background-color: #fff;
-    opacity: 0.8;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 1px;
+    padding: 1px;
 }
 
 .social-icons {
@@ -113,10 +216,23 @@ p {
     gap: 20px;
 }
 
+.socials-div p {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.soc-divider {
+    border: 0;
+    height: 1px;
+    background-color: #b49f6b;
+    width: 30%;
+}
+
 i {
-    font-size: 24px;
-    color: #2c3e50;
-    margin-top: 12px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 16px;
     padding-right: 0px;
 }
 
@@ -130,5 +246,12 @@ i {
 .footer-div p {
     color: #fff;
     font-family: 'Inter', sans-serif;
-    padding: 20px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.discount-info {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
 }
