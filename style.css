@@ -237,6 +237,13 @@ i {
     padding-right: 0px;
 }
 
+.res-divider {
+    border: 0;
+    height: 1px;
+    background-color: #b49f6b;
+    width: 30%;
+}
+
 .footer-div {
     background-color: #000;
     display: flex;
