@@ -264,10 +264,15 @@ i {
     font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) and (orientation: portrait) {
+    .palm-l, .palm-r {
+        display: none;
+    }
 
     body {
-        background-attachment: scroll;
+        background-image: url('images/mobile-bg.jpg');
+        background-color: #000;
+        justify-content: center;
     }
 
     h1 { font-size: 32px; }
@@ -279,27 +284,62 @@ i {
         font-size: 24px;
     }
 
+    .content {
+        max-width: 90%;
+        padding: 15px;
+    }
+
     .about-div {
         flex-direction: column;
     }
 
     .about-content {
-        max-width: 100%;
+        max-width: 85%;
         padding: 20px;
     }
 
+    .experiences-div {
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        justify-self: center;
+    }
+
     .sig-experiences {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        gap: 10px;
+        justify-self: center;
+        justify-content: center;
     }
 
     .experience {
-        width: 100%;
-        max-width: 300px;
+        width: 40%;
+        height: 150px;
+        justify-self: center;
+        padding: 5px;
+    }
+
+    .experience img {
+        width: 70%;
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+    .exp-divider {
+        width: 90%;
+        margin: 5px;
+        color: #b49f6b;
+        border: 0;
+        height: 1px;
+    }
+
+    .experience h3 {
+        font-size: 14px;
+        margin: 5px;
     }
 
     .reserve-div {
-        width: 90%;
+        width: 60%;
     }
 
     .reserve-div img {
@@ -307,9 +347,24 @@ i {
         height: auto;
     }
 
+    .socials-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+        justify-self: center;
+    }
+
     .footer-div {
         flex-direction: column;
         align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     }
 
     .content {
